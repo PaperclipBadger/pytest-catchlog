@@ -89,13 +89,13 @@ def pytest_addoption(parser):
     add_option_ini(
         parser,
         '--log-file-format',
-        dest='log_file_format', default=DEFAULT_LOG_FORMAT,
+        dest='log_file_format', default=None,
         help='log format as used by the logging module.'
     )
     add_option_ini(
         parser,
         '--log-file-date-format',
-        dest='log_file_date_format', default=DEFAULT_LOG_DATE_FORMAT,
+        dest='log_file_date_format', default=None,
         help='log date format as used by the logging module.'
     )
 
